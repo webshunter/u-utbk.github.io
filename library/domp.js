@@ -277,7 +277,7 @@ export function el(el) {
             b = '';
         }
         var d = div()
-            .class('row '+ b)
+            .class('row ' + b)
         a.forEach(function (elm) {
             d.child(
                 div().class(elm['class']).child(elm['content'])
@@ -466,6 +466,9 @@ export function tbody() {
 }
 export function form() {
     return el('FORM');
+}
+export function ol() {
+    return el('ol');
 }
 export function ul() {
     return el('ul');
